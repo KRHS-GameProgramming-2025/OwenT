@@ -23,18 +23,6 @@ def roof(t, size=10):
     
     move(t, 3*size, 1*size)
     dormir(t, size*1)
-    t.lt(90)
-    t.fd(size*1)
-    t.bk(size*1)
-    t.lt(90)
-    t.fd(size*1)
-    t.bk(size*1)
-    t.lt(90)
-    t.fd(size*1)
-    t.bk(size*1)
-    t.lt(90)
-    t.fd(size*1)
-    t.bk(size*1)
     move(t, -3*size, -1*size)
     
     
@@ -47,3 +35,9 @@ def window(t, size=10, color="white"):
 
 def dormir(t, size=10, color="blue"):
     arc(t, size*1, 360, 0, None, color)
+    count = 0
+    while count < 4:
+        t.lt(90)
+        t.fd(size*1)
+        t.bk(size*1)
+        count +=1
