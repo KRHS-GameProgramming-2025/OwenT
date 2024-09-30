@@ -1,0 +1,12 @@
+# ----Setup-----
+from turtle import *
+bob = Turtle() #Name your turtle
+
+# ----Code-----
+bob.fd(100)
+
+
+
+
+# ----End----
+done()
